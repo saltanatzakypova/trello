@@ -4,11 +4,11 @@ import { persistor, store } from "../store";
 
 const Providers = ({ children }) => {
   return (
-    <Provider store={store}>
+    <Providers store={store}>
       <PersistGate loading={null} persistor={persistor}>
         {children}
       </PersistGate>
-    </Provider>
+    </Providers>
   );
 };
 
